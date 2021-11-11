@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover shrink-to-fit=no">
+    <title>Заголовок, 50-60 символов, не совпадает с h1, не повторяется для разных страниц</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="описание, 70-150 символов, уникальное для всех страниц, не повторяет Title">
+    <meta name="keywords" content="ключевые слова">
+    <meta name="Author" content="Автор">
+    <meta name="referrer" content="strict-origin">
+
+    <!-- ЗАПРЕТ ИНДЕКСАЦИИ, УДАЛИТЬ НА БОЕВОМ СЕРВЕРЕ!!!-->
+    <meta name="robots" content="noindex, nofollow, noimageindex">
+
+    <!-- РАССКОМЕНТИРОВАТЬ НА БОЕВОМ СЕРВЕРЕ-->
+
+    <!-- <meta name="robots" content="index,follow" />-->
+
+    <!-- FONTS-->
+    <link rel="preload" href="./fonts/RFTone-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/RFTone-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/RFTone-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/RFTone-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/RFTone-LightItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/RFTone-UltraLight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <!-- CSS + Crytical-->
+
+    <style>
+        .spollers._one .spoller:not(._spoller_active)+* {
+            display: none;
+        }
+
+        .spollers._one .spoller._spoller_active+* {
+            display: block;
+        }
+    </style>
+    <style>.cl_12{flex:var(--fl_flex);width:var(--fl_width)}.cl>*,.cl_5>*,.cl_lg_6>*,.cl_sm_12>*{--fl_base:initial;--fl_col:initial}.header,.header__burger,.logo,.menu__list{display:flex;align-items:center}.menu_dark .menu__link{color:rgba(var(--clr-dark,silver),1)}.footer__nav{margin-left:auto}.section__nika_right{right:0;top:0;height:100%;width:auto}.section__nika_bottom{bottom:0;right:0;width:50%;max-width:100%;height:auto}.steps__track_up{top:-63px;right:-51px}@media all and (max-width:1199.98px){.d_lg_none{display:none!important}.mb_lg_16{margin-bottom:16px}.btn_md{width:322px}.header{min-height:48px}.hero{padding-top:124px;padding-bottom:60px;padding-left:48px;padding-right:48px}.hero__caption{max-width:420px}.hero__title{font-size:65px}.hero__title:not(:last-child){margin-bottom:24px}.hero__subitle{font-size:40px}.hero__subitle b{font-size:40px}.hero__txt{font-size:45px}.hero__btn:not(:last-child){margin-bottom:42px}.steps__item:nth-child(2) .steps__track{top:0;z-index:-1}.steps__item:nth-child(4) .steps__track{z-index:-1;transform:scaleY(-1);top:38px;right:-64px}.benefits .benefits__line_1{width:53%}.benefits .benefits__line_2{width:35%}.benefits .benefits__line_3{width:65%}.benefits .benefits__line_4{width:90%}.testimonials__btn{display:none}}@media all and (max-width:767.98px){.txt_h6{font-size:12px}.d_sm_none{display:none!important}.d_sm_flex{display:flex!important}.popup__cross{right:16px}.header__logo-wrap{padding:10px 12px 20px}.header__logo{width:92px}.header__menu{padding-top:0;margin-top:0}.menu{padding-top:100px;padding-bottom:100px;position:fixed;top:0;right:0;width:100vw;transform:translateX(100%);height:100vh;overflow-x:hidden;overflow-y:auto;display:flex;flex-wrap:wrap;background-color:rgba(var(--clr-dark,silver),.9)}.menu__list{flex-direction:column;margin-top:auto;margin-bottom:auto;flex:var(--fl,0 0 auto);width:calc(100% / 1 * 1);min-width:0}.menu__item:not(:last-child){margin-right:0;margin-bottom:30px}.hero{padding-bottom:0;margin-bottom:-25px;padding-top:68px}.hero__caption{max-width:100%;flex:var(--fl,0 0 auto);width:calc(100% / 1 * 1);min-width:0}.hero__title{font-size:45px}.hero__title:not(:last-child){margin-bottom:24px}.hero__subitle{font-size:25px}.hero__subitle b{font-size:25px}.hero__txt{font-size:25px}.hero__btn{margin-right:auto;margin-left:auto}.hero__btn:not(:last-child){margin-bottom:0}.steps__track{display:none}}.steps__track{position:absolute;width:112px}.steps__track_down{top:100px;right:-70px}.benefits .benefits__line{position:absolute;top:60px}.benefits .benefits__line_1{left:105%;width:65%}.benefits .benefits__line_2{left:105%;width:45%}.benefits .benefits__line_3{right:105%;width:85%}.benefits .benefits__line_4{right:105%;width:85%}.testimonials__btn{position:absolute;top:50%;transform:translateY(-50%);z-index:2}.testimonials__btn svg{width:32px;height:32px;fill:rgba(var(--clr-info,silver),1)}.testimonials__btn_prev{left:10%}.testimonials__btn_next{right:10%}@media all and (max-width:1199.98px){.d_lg_none{display:none!important}.mb_lg_16{margin-bottom:16px}.btn_md{width:322px}.header{min-height:48px}.hero{padding-top:124px;padding-bottom:60px;padding-left:48px;padding-right:48px}.hero__caption{max-width:420px}.hero__title{font-size:65px}.hero__title:not(:last-child){margin-bottom:24px}.hero__subitle{font-size:40px}.hero__subitle b{font-size:40px}.hero__txt{font-size:45px}.hero_hr:not(:last-child){margin-bottom:20px}.hero__price:not(:last-child){margin-bottom:20px}.hero__btn:not(:last-child){margin-bottom:42px}.hero__thumb{width:51%}.gift__title{font-size:25px}.gift__txt{font-size:25px}.benefits .benefits__line_1{width:53%}.benefits .benefits__line_2{width:35%}.benefits .benefits__line_3{width:65%}.benefits .benefits__line_4{width:90%}.testimonials__btn{display:none}}@media all and (max-width:991.98px){.popup__body{padding:40px 16px}.header__logo-wrap{padding:13px 18px 28px}.header__logo{width:126px}.header__menu{margin-top:32px}.menu__link{font-size:16px}.burger{display:block;width:32px;height:24px}.benefits .benefits__line{display:none}}@media all and (max-width:767.98px){.txt_h6{font-size:12px}.d_sm_none{display:none!important}.d_sm_flex{display:flex!important}.mr_sm_0{margin-right:0}.mr_sm_24{margin-right:24px}.popup__cross{right:16px}.header__logo-wrap{padding:10px 12px 20px}.header__logo{width:92px}.header__menu{padding-top:0;margin-top:0}.menu{padding-top:100px;padding-bottom:100px;position:fixed;top:0;right:0;width:100vw;transform:translateX(100%);height:100vh;overflow-x:hidden;overflow-y:auto;display:flex;flex-wrap:wrap;background-color:rgba(var(--clr-dark,silver),.9)}.menu__list{flex-direction:column;margin-top:auto;margin-bottom:auto;flex:var(--fl,0 0 auto);width:calc(100% / 1 * 1);min-width:0}.menu__item:not(:last-child){margin-right:0;margin-bottom:30px}.hero{padding-bottom:0;margin-bottom:-25px;padding-top:68px}.hero__caption{max-width:100%;flex:var(--fl,0 0 auto);width:calc(100% / 1 * 1);min-width:0}.hero__title{font-size:45px}.hero__title:not(:last-child){margin-bottom:24px}.hero__subitle{font-size:25px}.hero__subitle b{font-size:25px}.hero__txt{font-size:25px}.hero__price:not(:last-child){margin-bottom:104px}.hero__btn{margin-right:auto;margin-left:auto}.hero__btn:not(:last-child){margin-bottom:0}.hero__thumb{top:45%;transform:none;flex:var(--fl,0 0 auto);width:calc(100% / 1 * 1);min-width:0}.hero .hero__gift{margin-bottom:25px;margin-left:auto;max-width:150px;margin-right:-20px}.gift{padding:10px 16px 10px 15px}.gift__title{font-size:14px}.gift__txt{font-size:14px}.steps__track{display:none}.price__new{font-size:20px}.price__new b{font-size:40px}.price__old{font-size:14px}.price__old b{font-size:20px}}@media all and (max-width:575.98px){.gift__pic-img{width:42px;height:42px;flex:0 0 42px}}:root{--fnt_main:"RFTone",sans-serif;--clr-dark:0,0,0;--clr-dark_pale:26,26,26;--clr-dark_deep:0,0,0;--clr-light:255,255,255;--clr-light_pale:255,255,255;--clr-light_deep:230,230,230;--clr-prim:225,20,21;--clr-prim_pale:236,36,37;--clr-prim_deep:203,18,19;--clr-sec:254,101,14;--clr-sec_pale:254,116,38;--clr-sec_deep:240,88,1;--clr-info:141,141,141;--clr-info_pale:152,152,152;--clr-info_deep:127,127,127;--clr-focus:48,165,224;--clr-focus_pale:69,174,227;--clr-focus_deep:32,152,213;--clr-back:238,238,238;--clr-back_pale:240,240,240;--clr-back_deep:214,214,214;--clr-border:216,216,216;--clr-border_pale:220,220,220;--clr-border_deep:194,194,194;--clr-divider:141,141,141;--clr-divider_pale:152,152,152;--clr-divider_deep:127,127,127;--clr-grad:linear-gradient(256.37deg, #FFFFFF -17.45%, #FE650E 29.35%, #FEBC5A 96.29%);--header_height:100px;--scrollBar-color:var(--clr-grad);--scrollBar-width:8px;--scrollBar-height:auto;--scrollBar-radius:0px;--scrollBar-gap:0px;--text_selection_bg:rgba(var(--clr-sec, silver), 1);--text_selection_clr:rgba(var(--clr-light, silver), 1);--select-scroll:rgba(var(--clr-divider, silver), 1);--header_height:100px}*{box-sizing:border-box;margin:0;padding:0;border:0;outline:0!important;list-style:none;font-family:var(--fnt_main);overflow-wrap:break-word;word-break:break-word;text-rendering:optimizeSpeed}body,html{min-width:320px;background-color:#fff;width:100%;font-size:100%;position:relative}html{scroll-behavior:smooth}html{scrollbar-width:thin;scrollbar-color:var(--scrollBar-color) transparent}html::-webkit-scrollbar{width:var(--scrollBar-width);height:var(--scrollBar-height)}html::-webkit-scrollbar-track{background:0 0}html::-webkit-scrollbar-thumb{background:var(--scrollBar-color);border:var(--scrollBar-gap) solid transparent;border-radius:var(--scrollBar-radius);background-clip:content-box;opacity:.6}html::-webkit-scrollbar-button{display:none}body{min-height:100vh}@supports (padding:0px){body,header{padding-left:min(0vmin,env(safe-area-inset-left));padding-right:min(0vmin,env(safe-area-inset-right))}}header,nav,section{display:block}a,button,input{font-family:inherit;font-size:1}button{text-transform:none}input::-ms-clear{display:none}input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}button{background-color:transparent}button::-moz-focus-inner{padding:0;border:0}a,a:visited{text-decoration:none}h1,h2{font-size:inherit;font-weight:inherit;margin:0}img{display:block;width:100%;max-width:100%;height:auto}b{font-weight:bolder}.full{display:flex;flex-direction:column}.full__up{flex:1 0 auto;z-index:1;position:relative}.cl,.cl_12{flex:var(--fl_flex);width:var(--fl_width)}.cl>*,.cl_sm_12>*{--fl_base:initial;--fl_col:initial}.menu__item,.popup__cross{display:flex;align-items:center;justify-content:center}.gift,.header,.header__burger,.logo,.menu__list{display:flex;align-items:center}.btn{overflow-wrap:break-word;min-width:0;word-break:break-word}.txt{font-family:var(--fnt-main);font-style:normal;font-weight:400}.txt_light{color:rgba(var(--clr-light,silver),1)}.txt_h2{font-size:30px;line-height:1.1666666667}.txt_h6{font-size:16px;line-height:1.1875}.txt_thin{font-weight:300}.txt_black{font-weight:900}.txt_center{text-align:center}.txt_up{text-transform:uppercase}.box{width:100%;max-width:100%;padding-left:calc(50% - 1110px / 2);padding-right:calc(50% - 1110px / 2)}.row{display:flex;flex-wrap:wrap}.cl{--fl_flex:1 0 0%;--fl_width:auto}.cl_12{--fl_width:calc(100% / var(--fl_base, 12) * var(--fl_col, 1));--fl_flex:0 0 auto;--fl_col:12}.d_none{display:none!important}.mr_40{margin-right:40px}.mb_20{margin-bottom:20px}.mb_32{margin-bottom:32px}.mx_auto{margin-left:auto;margin-right:auto}.form{--input-height:55px;--input-radius:25px;--input-border:1px;--input-pb:20px;--input-border-color:transparent;--input-focus:clr(sec, 1)}.form__item{position:relative}.form__input{height:var(--input-height);padding:10px 24px;border-radius:var(--input-radius);font-weight:400;font-size:18px;line-height:1;color:#a3a3a3;position:relative;border:1px solid var(--input-border-color,rgba(var(--divider),1));min-width:0}.form__input::-webkit-input-placeholder{color:rgba(var(--dark),1);font-size:18px;font-weight:400;line-height:1}.form__input::-moz-placeholder{color:rgba(var(--dark),1);font-size:18px;font-weight:400;line-height:1}.form__input:-ms-input-placeholder{color:rgba(var(--dark),1);font-size:18px;font-weight:400;line-height:1}.form__input::-ms-input-placeholder{color:rgba(var(--dark),1);font-size:18px;font-weight:400;line-height:1}.ripple{position:relative;overflow:hidden;vertical-align:middle;z-index:1;will-change:opacity,transform}.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;font-weight:900;font-size:20px;line-height:24px;min-height:55px;background:var(--btn-bg-clr,rgba(var(--clr-info,silver),1));color:var(--btn-txt-clr,rgba(var(--clr-light,silver),1));border:1px solid var(--btn-border-clr,rgba(var(--clr-info,silver),1));text-transform:none;max-width:100%}.btn_prim{--btn-bg-clr:rgba(var(--clr-prim, silver), 1);--btn-txt-clr:rgba(var(--clr-light, silver), 1);--btn-border-clr:rgba(var(--clr-prim, silver), 1)}.btn_md{width:350px;max-width:100%}.btn_round{border-radius:50px}.popup{-webkit-overflow-scrolling:touch;z-index:3000;padding:30px 10px;position:fixed;top:0;left:0;width:100%;height:100%;visibility:hidden}.popup::before{content:"";background-color:rgba(0,0,0,.7);position:fixed;width:100%;height:100%;top:0;left:0;opacity:0}.popup__content{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100%;flex:1 1 auto;width:100%;padding:10px}.popup__body{transform:scale(.7);opacity:0;padding:40px;width:100%;max-width:412px;background:var(--clr-grad);border-radius:25px;box-shadow:0 0 0 10px rgba(var(--dark),.83);border:1px solid rgba(var(--light),1)}.popup__cross{width:13px;height:13px;position:absolute;bottom:calc(100% + 30px);right:0;z-index:30}.popup__cross svg{width:13px;height:13px;fill:rgba(var(--clr-light,silver),1)}.popup .popup__icon{display:block;width:136px;height:136px;flex:0 0 136px;fill:rgba(var(--clr-light,silver),1)}.noscript__box{margin:16px;padding:20px;box-shadow:0 0 20px 0 rgba(0,0,0,.15);color:silver;font-size:calc(20 * 1px + 8 * (100vw - 320 * 1px) / 1600);font-weight:400;border-radius:16px;display:block;position:relative}.noscript__close{padding:8px;display:block;width:32px;height:32px;float:right;position:relative;box-shadow:0 0 10px 0 rgba(0,0,0,.15);border-radius:50%;margin-top:-8px;margin-right:-8px;margin-left:8px}.noscript__icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:12px;height:12px;fill:silver}.header{position:fixed;top:0;z-index:1000;min-height:var(--header_height)}.header__logo-wrap{border-radius:0 0 25px 25px;padding:20px 22px 28px;background-color:rgba(var(--clr-light,silver),1);box-shadow:0 0 100px 30px rgba(var(--clr-light,silver),1);align-self:flex-start;transform-origin:top}.header__logo{width:157px}.header__menu{margin-left:auto;margin-top:50px}.header__burger{padding-left:24px;margin-left:auto;border:1px solid rgba(var(--clr-light,silver),1);padding:10px 50px 10px 22px;border-radius:25px;margin-right:-48px}.menu__list{position:relative}.menu__item{position:relative}.menu__item:not(:last-child){margin-right:40px}.menu__link{display:inline-block;color:rgba(var(--clr-light,silver),1);text-align:center;font-weight:300;font-size:20px;line-height:1.2;position:relative}.menu__link::before{content:"";position:absolute;top:100%;left:50%;transform:translateX(-50%);height:2px;width:0;background:rgba(var(--clr-light,silver),1);border-radius:2px}.menu__link_active{font-weight:700}.logo__img{width:100%;height:auto;-o-object-fit:contain;object-fit:contain}.burger{--burger:rgba(var(--clr-dark, silver), 1);z-index:2;position:relative;width:32px;height:24px;display:none;flex:0 0 auto;margin-left:auto}.burger__line{height:5px;width:100%;border-radius:5px;background-color:rgba(var(--clr-light,silver),1);display:block;position:absolute}.burger__line:nth-child(1){top:0;left:0;transform-origin:center center}.burger__line:nth-child(2){top:50%;left:50%;transform:translate(-50%,-50%)}.burger__line:nth-child(3){bottom:0;left:0;transform-origin:center center}.hero{position:relative;padding-top:168px;padding-bottom:112px;min-width:0}.hero__bg{position:absolute;top:0;left:0;width:100%;height:100%}.hero__bg-img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:0 0;object-position:0 0}.hero__content{position:relative;display:flex;flex-wrap:wrap;z-index:2}.hero__caption{max-width:661px}.hero__title{font-weight:900;font-size:90px;line-height:1.2222222222;color:rgba(var(--clr-light,silver),1);text-transform:uppercase}.hero__title:not(:last-child){margin-bottom:40px}.hero__subitle{font-size:60px;line-height:1.2;color:rgba(var(--clr-light,silver),1);font-weight:400}.hero__subitle b{font-weight:700;font-size:80px}.hero__txt{font-weight:400;font-size:60px;line-height:1.2;color:rgba(var(--clr-light,silver),1);font-weight:200}.hero_hr{width:539px;max-width:100%;height:1px;background-color:rgba(var(--clr-light,silver),1)}.hero_hr:not(:last-child){margin-bottom:46px}.hero__price{display:flex}.hero__price:not(:last-child){margin-bottom:41px}.hero__btn:not(:last-child){margin-bottom:32px}.hero__thumb{display:block;position:absolute;top:50%;right:0;width:47%;transform:translateY(-50%);z-index:1}.hero .hero__gift{display:block;bottom:5%}.section{position:relative;overflow:hidden}.section__nika{position:absolute;z-index:2}.section__nika_left{left:0;top:0;height:100%;width:auto}:root{--swiper-theme-color:#007aff}[data-aos^=fade][data-aos^=fade]{opacity:0}[data-aos=fade-left]{transform:translate3d(100px,0,0)}.gift{background:linear-gradient(90deg,#fff -66.83%,rgba(255,255,255,0) 98.54%);border-radius:25px;padding:14px 32px 26px;z-index:1;position:relative}.gift__pic{margin-right:12px}.gift__pic-img{width:82px;height:82px;flex:0 0 82px}.gift__title{font-weight:900;font-size:35px;line-height:1;color:rgba(var(--clr-light,silver),1)}.gift__txt{font-weight:300;font-size:35px;line-height:1;color:rgba(var(--clr-light,silver),1)}.stats{position:relative;display:flex;flex-wrap:wrap;background-color:rgba(var(--clr-dark,silver),1);padding-right:calc(50% - 1110px / 2);padding-top:72px;padding-bottom:72px}.stats::before{content:"";position:absolute;top:0;left:0;width:25%;height:100%;background:linear-gradient(90deg,#000 0,rgba(0,0,0,0) 100%);z-index:2}.stats .stats__decor{position:absolute;top:50%;right:0;transform:translate(50%,-50%);width:30%;border-radius:50%;background:linear-gradient(256.37deg,#fff -17.45%,#fe650e 29.35%,#febc5a 96.29%);-webkit-filter:blur(300px);filter:blur(300px)}.stats .stats__decor::before{content:"";float:left;height:0;margin-left:-1px;width:1px;padding-top:calc(1 / 1 * 100%)}.stats .stats__decor::after{content:"";display:table;clear:both}.stats__pic{flex:1 1;z-index:1;margin-right:94px}.stats__info{max-width:583px;margin-left:auto;z-index:2}.stats__title{font-weight:400;font-size:45px;line-height:55px;text-transform:uppercase;color:rgba(var(--clr-light,silver),1);color:rgba(var(--clr-light,silver),1)}.stats__title:not(:last-child){margin-bottom:60px}.stats__title b{font-weight:900}.stats__item:not(:last-child){margin-bottom:60px}.stats__item-title{font-weight:900;font-size:60px;line-height:1.2166666667;color:rgba(var(--clr-light,silver),1)}.stats__item-txt{font-weight:700;font-size:30px;line-height:1.2;color:rgba(var(--clr-light,silver),1)}.stats__dash{display:flex}.stats__dash-item:not(:last-child){padding-right:60px}.stats__dash-icon{width:75px;height:75px}.stats__dash-icon:not(:last-child){margin-bottom:20px}.price__new{font-weight:700;font-size:30px;line-height:36px}.price__new b{font-weight:900;font-size:60px;line-height:1.2166666667}.price__old{padding-top:10px;font-weight:700;font-size:14px;line-height:17px}.price__old b{font-weight:400;font-size:30px;line-height:1.2;display:inline-block;position:relative}.price__old b::before{content:"";position:absolute;top:90%;left:50%;width:120%;height:2px;background-color:currentColor;transform:rotate(15deg) translate(-50%,-50%)}@media all and (max-width:1199.98px){.mb_lg_16{margin-bottom:16px}.btn_md{width:322px}.header{min-height:48px}.hero{padding-top:124px;padding-bottom:60px;padding-left:48px;padding-right:48px}.hero__caption{max-width:420px}.hero__title{font-size:65px}.hero__title:not(:last-child){margin-bottom:24px}.hero__subitle{font-size:40px}.hero__subitle b{font-size:40px}.hero__txt{font-size:45px}.hero_hr:not(:last-child){margin-bottom:20px}.hero__price:not(:last-child){margin-bottom:20px}.hero__btn:not(:last-child){margin-bottom:42px}.hero__thumb{width:51%}.gift__title{font-size:25px}.gift__txt{font-size:25px}.stats{padding-bottom:32px}.stats::before{display:none}.stats .stats__decor{width:60%}.stats__pic{flex:var(--fl,0 0 auto);width:calc(100% / 1 * 1);min-width:0;max-width:80%;margin-inline:auto;order:2}.stats__info{flex:var(--fl,0 0 auto);width:calc(100% / 1 * 1);min-width:0;max-width:100%;padding:0 48px;order:1;display:flex;flex-wrap:wrap;margin-bottom:42px}.stats__title{flex:var(--fl,0 0 auto);width:calc(100% / 1 * 1);min-width:0}.stats__title:not(:last-child){margin-bottom:16px}.stats__item{flex:var(--fl,0 0 auto);width:calc(100% / 2 * 1);min-width:0}.stats__item:not(:last-child){margin-bottom:16px}.stats__dash-item{display:flex;align-items:center;flex:var(--fl,0 0 auto);width:calc(100% / 3 * 1);min-width:0}.stats__dash-icon{width:60px;height:60px}.stats__dash-icon:not(:last-child){margin-bottom:0;margin-right:12px}}@media (max-width:1199.98px){.box{padding-left:48px;padding-right:48px}}@media all and (max-width:991.98px){.popup__body{padding:40px 16px}.header__logo-wrap{padding:13px 18px 28px}.header__logo{width:126px}.header__menu{margin-top:32px}.menu__link{font-size:16px}.burger{display:block;width:32px;height:24px}.stats__info{padding:0 32px}}@media (max-width:991.98px){.box{padding-left:32px;padding-right:32px}}@media all and (max-width:767.98px){.txt_h6{font-size:12px}.d_sm_none{display:none!important}.d_sm_flex{display:flex!important}.mr_sm_0{margin-right:0}.mr_sm_24{margin-right:24px}.popup__cross{right:16px}.header__logo-wrap{padding:10px 12px 20px}.header__logo{width:92px}.header__menu{padding-top:0;margin-top:0}.menu{padding-top:100px;padding-bottom:100px;position:fixed;top:0;right:0;width:100vw;transform:translateX(100%);height:100vh;overflow-x:hidden;overflow-y:auto;display:flex;flex-wrap:wrap;background-color:rgba(var(--clr-dark,silver),.9)}.menu__list{flex-direction:column;margin-top:auto;margin-bottom:auto;flex:var(--fl,0 0 auto);width:calc(100% / 1 * 1);min-width:0}.menu__item:not(:last-child){margin-right:0;margin-bottom:30px}.hero{padding-bottom:0;margin-bottom:-25px;padding-top:68px}.hero__caption{max-width:100%;flex:var(--fl,0 0 auto);width:calc(100% / 1 * 1);min-width:0}.hero__title{font-size:45px}.hero__title:not(:last-child){margin-bottom:24px}.hero__subitle{font-size:25px}.hero__subitle b{font-size:25px}.hero__txt{font-size:25px}.hero__price:not(:last-child){margin-bottom:104px}.hero__btn{margin-right:auto;margin-left:auto}.hero__btn:not(:last-child){margin-bottom:0}.hero__thumb{top:45%;transform:none;flex:var(--fl,0 0 auto);width:calc(100% / 1 * 1);min-width:0}.hero .hero__gift{margin-bottom:25px;margin-left:auto;max-width:150px;margin-right:-20px}.gift{padding:10px 16px 10px 15px}.gift__title{font-size:14px}.gift__txt{font-size:14px}.stats__pic{max-width:100%}.stats__info{padding:0 24px}.stats__title{font-size:30px}.stats__item:not(:last-child){margin-bottom:24px}.stats__item-title{font-size:30px}.stats__item-txt{font-size:18px}.stats__dash-item{display:block}.stats__dash-item:not(:last-child){padding-right:20px}.stats__dash-icon{width:44px;height:44px}.stats__dash-icon:not(:last-child){margin-bottom:14px}.price__new{font-size:20px}.price__new b{font-size:40px}.price__old{font-size:14px}.price__old b{font-size:20px}}@media (max-width:767.98px){.box{padding-left:24px;padding-right:24px}}@media all and (max-width:575.98px){.gift__pic-img{width:42px;height:42px;flex:0 0 42px}.stats__info{padding:0 16px}}@media (max-width:575.98px){.box{padding-left:16px;padding-right:16px}}</style>
+    <link rel="stylesheet" href="./css/style.min.css" media="print" onload="this.media='all'">
+
+    <!-- SVG SPRITE-->
+    <link rel="prefetch" href="./icons/icons.svg" as="image" type="image/svg+xml">
+
+    <!-- FAVICON-->
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon/favicon-48x48.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#CD2E2B">
+    <meta name="application-name">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="favicon/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="favicon/apple-touch-icon-1024x1024.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title">
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="favicon/apple-touch-startup-image-640x1136.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="favicon/apple-touch-startup-image-750x1334.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="favicon/apple-touch-startup-image-828x1792.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="favicon/apple-touch-startup-image-1125x2436.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="favicon/apple-touch-startup-image-1242x2208.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="favicon/apple-touch-startup-image-1242x2688.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="favicon/apple-touch-startup-image-1536x2048.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="favicon/apple-touch-startup-image-1668x2224.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="favicon/apple-touch-startup-image-1668x2388.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="favicon/apple-touch-startup-image-2048x2732.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="favicon/apple-touch-startup-image-1620x2160.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="favicon/apple-touch-startup-image-1136x640.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="favicon/apple-touch-startup-image-1334x750.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="favicon/apple-touch-startup-image-1792x828.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="favicon/apple-touch-startup-image-2436x1125.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="favicon/apple-touch-startup-image-2208x1242.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="favicon/apple-touch-startup-image-2688x1242.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="favicon/apple-touch-startup-image-2048x1536.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="favicon/apple-touch-startup-image-2224x1668.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="favicon/apple-touch-startup-image-2388x1668.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="favicon/apple-touch-startup-image-2732x2048.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="favicon/apple-touch-startup-image-2160x1620.png">
+    <link rel="icon" type="image/png" sizes="228x228" href="favicon/coast-228x228.png">
+    <meta name="msapplication-TileColor" content="#CD2E2B">
+    <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <link rel="yandex-tableau-widget" href="favicon/yandex-browser-manifest.json">
+    <!--SCRIPTS-->
+
+    <!-- JS-->
+    <script src="js/script.min.js" defer="defer"></script>
+</head>
+
+<body class="wrapper full">
+    <!--No SCRIPT-->
+    <noscript class="noscript">
+        <label class="noscript__inner">
+            <input class="noscript__state _invis" type="checkbox" name="noscript" aria-label="noscript">
+            <span class="noscript__box">
+                <span class="noscript__close">
+                    <svg class="noscript__icon">
+                        <use href="./icons/icons.svg#cmn--close"></use>
+                    </svg>
+                </span>У вас отключен JavaScript. Сайт может отображаться некорректно. Рекомендуем включить JavaScript.
+            </span>
+        </label>
+    </noscript>
+
+    <!-- HEADER-->
+    <header class="header box">
+        <a class="header__logo-wrap ripple ripple_sec" href="##" aria-label="logo">
+            <div class="logo header__logo">
+                <img class="logo__img" src="./img/cmn/logo.png" alt="logo">
+            </div>
+        </a>
+
+        <!-- Menu-->
+        <div class="menu header__menu">
+            <nav class="menu__list">
+                <div class="menu__stripe"></div>
+                <div class="menu__item menu__item_active">
+                    <a class="menu__link menu__link_active" href="#">Главная</a>
+                </div>
+                <div class="menu__item">
+                    <a class="menu__link" href="#">Возможности</a>
+                </div>
+                <div class="menu__item">
+                    <a class="menu__link" href="#">Отзывы</a>
+                </div>
+                <div class="menu__item">
+                    <a class="menu__link" href="#">Доставка</a>
+                </div>
+            </nav>
+        </div>
+        <div class="header__burger d_none d_sm_flex">
+            <button class="burger menu__burger" type="button" aria-label="Навигация">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN-->
+    <main class="full__up">
+
+        <!-- Hero-->
+        <section class="hero box section section_hero">
+            <picture class="hero__bg">
+                <source type="image/webp" srcset="./img/hero/hero_bg_sm.webp" media="(max-width: 574.98px)">
+                <source type="image/png" srcset="./img/hero/hero_bg_sm.png" media="(max-width: 574.98px)">
+                <source type="image/webp" srcset="./img/hero/hero_bg_md.webp" media="(max-width: 991.98px)">
+                <source type="image/png" srcset="./img/hero/hero_bg_md.png" media="(max-width: 991.98px)">
+                <source type="image/webp" srcset="./img/hero/hero_bg.webp">
+                <source type="image/png" srcset="./img/hero/hero_bg.png">
+                <img class="hero__bg-img" src="./img/hero/hero_bg.png" alt="hero bg" loading="lazy">
+            </picture>
+            <img class="section__nika section__nika_left d_sm_none" src="./img/cmn/NIKATV_v.svg" alt="NIKATV v" loading="lazy">
+            <div class="hero__content row">
+                <div class="hero__caption">
+                    <h1 class="hero__title">СМОТРИТЕ
+                        <br>
+                        <span class="hero__subitle">БОЛЕЕ <b>250</b> КАНАЛОВ
+                            <br>
+                        </span>
+                        <span class="hero__txt">на русском</span>
+                    </h1>
+                    <div class="hero_hr"></div>
+                    <div class="hero__price price">
+                        <div class="price__new txt txt_light mr_40 mr_sm_24">
+                            <b>9,90 €</b>
+                            <br> Цена в месяц
+                        </div>
+                        <div class="price__old txt txt_light">
+                            <b>19,90 €</b>
+                            <br> Старая цена
+                        </div>
+                    </div>
+                    <a class="hero__btn btn btn_md btn_prim btn_shad btn_round ripple ripple_light _popup-link d_sm_none" href="#consult">Узнать больше</a>
+                    <div class="gift hero__gift">
+                        <picture class="gift__pic">
+                            <source type="image/webp" srcset="./img/cmn/gift.webp">
+                            <source type="image/png" srcset="./img/cmn/gift.png">
+                            <img class="gift__pic-img" src="./img/cmn/gift.png" alt="gift" loading="lazy">
+                        </picture>
+                        <div class="gift__info cl">
+                            <div class="gift__title mr_40 mr_sm_0">3 месяца</div>
+                            <div class="gift__txt">просмотра в подарок</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <picture class="hero__thumb">
+                <source type="image/webp" srcset="./img/hero/hero_main_sm.webp" media="(max-width: 574.98px)">
+                <source type="image/png" srcset="./img/hero/hero_main_sm.png" media="(max-width: 574.98px)">
+                <source type="image/webp" srcset="./img/hero/hero_main_md.webp" media="(max-width: 991.98px)">
+                <source type="image/png" srcset="./img/hero/hero_main_md.png" media="(max-width: 991.98px)">
+                <source type="image/webp" srcset="./img/hero/hero_main.webp">
+                <source type="image/png" srcset="./img/hero/hero_main.png">
+                <img class="hero__thumb-img" src="./img/hero/hero_main.png" alt="hero main" loading="lazy">
+            </picture>
+            <a class="hero__btn btn btn_md btn_prim btn_shad btn_round ripple ripple_light d_none d_sm_flex" href="##">Узнать больше</a>
+        </section>
+
+        <!-- Statisctic-->
+        <section class="stats section section_stats">
+            <div class="stats__decor"></div>
+            <picture class="stats__pic">
+                <source type="image/webp" srcset="./img/stats/stats_tv_sm.webp" media="(max-width: 574.98px)">
+                <source type="image/png" srcset="./img/stats/stats_tv_sm.png" media="(max-width: 574.98px)">
+                <source type="image/webp" srcset="./img/stats/stats_tv_md.webp" media="(max-width: 991.98px)">
+                <source type="image/png" srcset="./img/stats/stats_tv_md.png" media="(max-width: 991.98px)">
+                <source type="image/webp" srcset="./img/stats/stats_tv.webp">
+                <source type="image/png" srcset="./img/stats/stats_tv.png">
+                <img class="stats__pic-img" src="./img/stats/stats_tv.png" alt="stats tv" loading="lazy">
+            </picture>
+            <div class="stats__info" data-aos="fade-left">
+                <h2 class="stats__title">
+                    <b>Телеканалы</b>
+                    <br> для всей семьи
+                </h2>
+                <div class="stats__item">
+                    <div class="stats__item-title">250+</div>
+                    <div class="stats__item-txt">Телеканалов</div>
+                </div>
+                <div class="stats__item">
+                    <div class="stats__item-title">14 дней</div>
+                    <div class="stats__item-txt">Запись эфиров</div>
+                </div>
+                <div class="stats__dash">
+                    <div class="stats__dash-item">
+                        <img class="stats__dash-icon" src="./img/stats/pause.svg" alt="pause" loading="lazy">
+                        <div class="stats__dash-caption">Ставьте на паузу</div>
+                    </div>
+                    <div class="stats__dash-item">
+                        <img class="stats__dash-icon" src="./img/stats/play.svg" alt="play" loading="lazy">
+                        <div class="stats__dash-caption">Cмотрите сначала</div>
+                    </div>
+                    <div class="stats__dash-item">
+                        <img class="stats__dash-icon" src="./img/stats/loop.svg" alt="loop" loading="lazy">
+                        <div class="stats__dash-caption">Перематывайте программы</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistic-->
+        <section class="section section_how box pt_72 pb_80">
+            <div class="section__decor"></div>
+            <div class="section__header mb_28">
+                <h2 class="txt txt_h1 txt_dark txt_center txt_up">
+                    <b class="txt txt_black">Как работает</b>
+                    <br> NIKA TV?
+                </h2>
+            </div>
+            <div class="section__body">
+                <!--Steps-->
+                <div class="steps">
+
+                    <!-- Step-->
+                    <div class="steps__item" data-aos="zoom-in">
+                        <img class="steps__track steps__track_down" src="./img/steps/steps_track_down.svg" alt="steps track down" loading="lazy">
+                        <div class="step" data-aos="zoom-in">
+                            <div class="mb_20">
+                                <picture class="step__pic">
+                                    <source type="image/webp" srcset="./img/steps/steps_1.webp">
+                                    <source type="image/png" srcset="./img/steps/steps_1.png">
+                                    <img class="step__pic-img" src="./img/steps/steps_1.png" alt="steps 1" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="step__info">
+                                <div class="txt txt_4 txt_dark txt_center">
+                                    <b class="txt txt_bold">Достаньте</b>
+                                    <br> ресивер с коробки
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step-->
+                    <div class="steps__item mt_160 mt_lg_100 mt_sm_0" data-aos="zoom-in">
+                        <img class="steps__track steps__track_up" src="./img/steps/steps_track_up.svg" alt="steps track up" loading="lazy">
+                        <div class="step" data-aos="zoom-in">
+                            <div class="mb_20">
+                                <picture class="step__pic">
+                                    <source type="image/webp" srcset="./img/steps/steps_2.webp">
+                                    <source type="image/png" srcset="./img/steps/steps_2.png">
+                                    <img class="step__pic-img" src="./img/steps/steps_2.png" alt="steps 2" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="step__info">
+                                <div class="txt txt_4 txt_dark txt_center">
+                                    <b class="txt txt_bold">Соедините приставку</b>
+                                    <br> и телевизор через HDMI или SCART
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step-->
+                    <div class="steps__item" data-aos="zoom-in">
+                        <img class="d_lg_none steps__track steps__track_down" src="./img/steps/steps_track_down.svg" alt="steps track down" loading="lazy">
+                        <div class="step" data-aos="zoom-in">
+                            <div class="mb_20">
+                                <picture class="step__pic">
+                                    <source type="image/webp" srcset="./img/steps/steps_3.webp">
+                                    <source type="image/png" srcset="./img/steps/steps_3.png">
+                                    <img class="step__pic-img" src="./img/steps/steps_3.png" alt="steps 3" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="step__info">
+                                <div class="txt txt_4 txt_dark txt_center">
+                                    <b class="txt txt_bold">Подключите блок</b>
+                                    <br> питания к ресиверу и в розетку
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step-->
+                    <div class="steps__item mt_160 mt_lg_0" data-aos="zoom-in">
+                        <img class="steps__track steps__track_up" src="./img/steps/steps_track_up.svg" alt="steps track up" loading="lazy">
+                        <div class="step" data-aos="zoom-in">
+                            <div class="mb_20">
+                                <picture class="step__pic">
+                                    <source type="image/webp" srcset="./img/steps/steps_4.webp">
+                                    <source type="image/png" srcset="./img/steps/steps_4.png">
+                                    <img class="step__pic-img" src="./img/steps/steps_4.png" alt="steps 4" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="step__info">
+                                <div class="txt txt_4 txt_dark txt_center">
+                                    <b class="txt txt_bold">Выберите</b>
+                                    <br> язык интерфейса
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step-->
+                    <div class="steps__item" data-aos="zoom-in">
+                        <div class="step">
+                            <div class="mb_20">
+                                <picture class="step__pic">
+                                    <source type="image/webp" srcset="./img/steps/steps_5.webp">
+                                    <source type="image/png" srcset="./img/steps/steps_5.png">
+                                    <img class="step__pic-img" src="./img/steps/steps_5.png" alt="steps 5" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="step__info">
+                                <div class="txt txt_4 txt_dark txt_center">
+                                    <b class="txt txt_bold">Наслаждайтесь</b>
+                                    <br> просмотром более 250 каналов на Русском, Украинском, Немецком и др. языках
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits-->
+        <section class="box section section_benefits pt_72 pb_80">
+            <picture class="section__bg">
+                <source type="image/webp" srcset="./img/benefits/benefits_bg_sm.webp" media="(max-width: 574.98px)">
+                <source type="image/png" srcset="./img/benefits/benefits_bg_sm.png" media="(max-width: 574.98px)">
+                <source type="image/webp" srcset="./img/benefits/benefits_bg_md.webp" media="(max-width: 991.98px)">
+                <source type="image/png" srcset="./img/benefits/benefits_bg_md.png" media="(max-width: 991.98px)">
+                <source type="image/webp" srcset="./img/benefits/benefits_bg.webp">
+                <source type="image/png" srcset="./img/benefits/benefits_bg.png">
+                <img class="section__bg-img" src="./img/benefits/benefits_bg.png" alt="benefits bg" loading="lazy">
+            </picture>
+            <img class="section__nika section__nika_right d_sm_none" src="./img/cmn/NIKATV_v.svg" alt="NIKATV v" loading="lazy">
+            <div class="section__decor"></div>
+            <div class="section__txt"></div>
+            <div class="section__content">
+                <div class="section__header mb_44">
+                    <h2 class="txt txt_h1 txt_dark txt_up txt_light">
+                        <b class="txt txt_black">Основные</b>
+                        <br> преимущества Nika TV
+                    </h2>
+                </div>
+                <div class="section__body">
+                    <div class="benefits row jc_between mnl_md_16">
+                        <div class="benefits_cl pl_md_16">
+
+                            <!-- Benefits item-->
+                            <div class="benefits__item mb_64 mb_lg_40">
+                                <div class="benefit" data-aos="fade-right">
+                                    <img class="benefit__icon" src="./img/benefits/benefit_icon_1.svg" alt="benefit icon 1" loading="lazy">
+                                    <div class="benefit__title txt txt_h5 txt_light txt_black">ПОДДЕРЖКА НОВЫХ СТАНДАРТОВ</div>
+                                    <div class="benefit__txt txt txt_h6 txt_thin txt_light">Full HD 1080P с частотой кадров до 60 к/с</div>
+                                </div>
+                                <img class="benefits__line benefits__line_1" src="./img/benefits/benefits_line_1.svg" alt="benefits line 1" loading="lazy">
+                            </div>
+
+                            <!-- Benefits item-->
+                            <div class="benefits__item">
+                                <div class="benefit" data-aos="fade-right">
+                                    <img class="benefit__icon" src="./img/benefits/benefit_icon_2.svg" alt="benefit icon 2" loading="lazy">
+                                    <div class="benefit__title txt txt_h5 txt_light txt_black">СУПЕР-ПЛАВНЫЙ ИНТЕРФЕЙС</div>
+                                    <div class="benefit__txt txt txt_h6 txt_thin txt_light">Мощный многоядерный процессор, обеспечивает плавную анимацию интерфейса</div>
+                                </div>
+                                <img class="benefits__line benefits__line_2" src="./img/benefits/benefits_line_2.svg" alt="benefits line 2" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="benefits__view" data-aos="zoom-in">
+                            <picture class="benefits__pic">
+                                <source type="image/webp" srcset="./img/benefits/benefits_view.webp">
+                                <source type="image/" srcset="./img/benefits/benefits_view.">
+                                <img class="benefits__pic-img" src="./img/benefits/benefits_view." alt="benefits view" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="benefits_cl pl_md_16">
+
+                            <!-- Benefits item-->
+                            <div class="benefits__item mb_64 mb_lg_40">
+                                <div class="benefit txt_right txt_md_left" data-aos="fade-left">
+                                    <img class="ml_auto ml_md_0 benefit__icon" src="./img/benefits/benefit_icon_3.svg" alt="benefit icon 3" loading="lazy">
+                                    <div class="benefit__title txt txt_h5 txt_light txt_black ml_auto">ПОДДЕРЖКА НОВЫХ СТАНДАРТОВ</div>
+                                    <div class="benefit__txt txt txt_h6 txt_thin txt_light ml_auto">Full HD 1080P с частотой кадров до 60 к/с</div>
+                                </div>
+                                <img class="benefits__line benefits__line_3" src="./img/benefits/benefits_line_3.svg" alt="benefits line 3" loading="lazy">
+                            </div>
+
+                            <!-- Benefits item-->
+                            <div class="benefits__item" data-aos="fade-left">
+                                <div class="benefit txt_right txt_md_left">
+                                    <img class="ml_auto ml_md_0 benefit__icon" src="./img/benefits/benefit_icon_4.svg" alt="benefit icon 4" loading="lazy">
+                                    <div class="benefit__title txt txt_h5 txt_light txt_black ml_auto">СУПЕР-ПЛАВНЫЙ ИНТЕРФЕЙС</div>
+                                    <div class="benefit__txt txt txt_h6 txt_thin txt_light ml_auto">Мощный многоядерный процессор, обеспечивает плавную анимацию интерфейса</div>
+                                </div>
+                                <img class="benefits__line benefits__line_4" src="./img/benefits/benefits_line_4.svg" alt="benefits line 4" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefits__gift" data-aos="fade-up">
+                        <div class="gift row">
+                            <div class="cl_auto cl_md_12 price row mr_32 mr_md_16 mr_sm_0">
+                                <div class="price__new txt txt_dark pr_24 pr_sm_8">
+                                    <b class="txt txt_prim">9,90 €</b>
+                                    <br> Цена в месяц
+                                </div>
+                                <div class="price__old txt txt_dark">
+                                    <b>19,90 €</b>
+                                    <br> Старая цена
+                                </div>
+                            </div>
+                            <div class="cl cl_md_12">
+                                <div class="ai_center mb_12">
+                                    <picture class="gift__pic">
+                                        <source type="image/webp" srcset="./img/cmn/gift.webp">
+                                        <source type="image/png" srcset="./img/cmn/gift.png">
+                                        <img class="gift__pic-img" src="./img/cmn/gift.png" alt="gift" loading="lazy">
+                                    </picture>
+                                    <div class="gift__info cl">
+                                        <div class="txt txt_h5 txt_light txt_black">3 месяца</div>
+                                        <div class="txt txt_h5 txt_light txt_thin">просмотра в подарок</div>
+                                    </div>
+                                </div>
+                                <a class="btn btn_md btn_round btn_prim btn_shad ripple ripple_light" href="##"> Купить со скидкой</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials-->
+        <section class="section section_testimonials pt_72 pb_80">
+            <div class="section__header box mb_24">
+                <h2 class="txt txt_h1 txt_dark txt_center txt_up">
+                    <b class="txt txt_black">Отзывы</b>
+                    <br>
+                </h2>
+            </div>
+            <div class="section__body box">
+                <div class="testimonials">
+
+                    <!-- Controls-->
+                    <button class="testimonials__btn testimonials__btn_prev">
+                        <svg>
+                            <use href="./icons/icons.svg#arrow_left"></use>
+                        </svg>
+                    </button>
+                    <buttob class="testimonials__btn testimonials__btn_next">
+                        <svg>
+                            <use href="./icons/icons.svg#arrow_right"></use>
+                        </svg>
+                    </buttob>
+
+                    <!-- Slider-->
+                    <div class="swiper-container testimonials__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide testimonials__item">
+                                <div class="testimonial full">
+                                    <div class="testimonial__thumb">
+                                        <picture class="ratio__box testimonial__pic">
+                                            <source type="image/webp" srcset="./img/testimonials/testimonials_1.webp">
+                                            <source type="image/jpg" srcset="./img/testimonials/testimonials_1.jpg">
+                                            <img class="ratio__box testimonial__pic-img" src="./img/testimonials/testimonials_1.jpg" alt="testimonials 1" loading="lazy">
+                                        </picture>
+                                    </div>
+                                    <div class="testimonial__body full__up full p_32">
+                                        <div class="testimonial__info full__up mb_20">
+                                            <div class="testimonial__title txt txt_h4 txt_dark txt_up txt_black mb_20">Иван Иванов</div>
+                                            <div class="testimonial__txt txt txt_h6 txt_info">Первое время периодами не включалось видео на Ютубе, был чёрный экран и выдавало какую-то ошибку. В приложении с фильмами, при открытии фильма был чёрный экран. Обновление андроид последнее, приложение обновлений не требовали. Помогала только перезагрузка. Сейчас вроде наладилось.</div>
+                                        </div>
+                                        <div class="testimonial__footer full__down row">
+                                            <a class="testimonial__link txt txt_h5 txt_prim txt_link mr_12" href="##"> Читать полностью</a>
+                                            <time class="testimonial__time txt txt_h6 txt_dark txt_bold ml_auto" datetime="2021-09-25 19:00">25.09.21</time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials__item">
+                                <div class="testimonial full">
+                                    <div class="testimonial__thumb">
+                                        <picture class="ratio__box testimonial__pic">
+                                            <source type="image/webp" srcset="./img/testimonials/testimonials_2.webp">
+                                            <source type="image/jpg" srcset="./img/testimonials/testimonials_2.jpg">
+                                            <img class="ratio__box testimonial__pic-img" src="./img/testimonials/testimonials_2.jpg" alt="testimonials 2" loading="lazy">
+                                        </picture>
+                                    </div>
+                                    <div class="testimonial__body full__up full p_32">
+                                        <div class="testimonial__info full__up mb_20">
+                                            <div class="testimonial__title txt txt_h4 txt_dark txt_up txt_black mb_20">Иван Иванов</div>
+                                            <div class="testimonial__txt txt txt_h6 txt_info">Первое время периодами не включалось видео на Ютубе, был чёрный экран и выдавало какую-то ошибку. В приложении с фильмами, при открытии фильма был чёрный экран. Обновление андроид последнее, приложение обновлений не требовали. Помогала только перезагрузка. Сейчас вроде наладилось.</div>
+                                        </div>
+                                        <div class="testimonial__footer full__down row">
+                                            <a class="testimonial__link txt txt_h5 txt_prim txt_link mr_12" href="##"> Читать полностью</a>
+                                            <time class="testimonial__time txt txt_h6 txt_dark txt_bold ml_auto" datetime="2021-09-25 19:00">25.09.21</time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials__item">
+                                <div class="testimonial full">
+                                    <div class="testimonial__thumb">
+                                        <picture class="ratio__box testimonial__pic">
+                                            <source type="image/webp" srcset="./img/testimonials/testimonials_3.webp">
+                                            <source type="image/jpg" srcset="./img/testimonials/testimonials_3.jpg">
+                                            <img class="ratio__box testimonial__pic-img" src="./img/testimonials/testimonials_3.jpg" alt="testimonials 3" loading="lazy">
+                                        </picture>
+                                    </div>
+                                    <div class="testimonial__body full__up full p_32">
+                                        <div class="testimonial__info full__up mb_20">
+                                            <div class="testimonial__title txt txt_h4 txt_dark txt_up txt_black mb_20">Иван Иванов</div>
+                                            <div class="testimonial__txt txt txt_h6 txt_info">Первое время периодами не включалось видео на Ютубе, был чёрный экран и выдавало какую-то ошибку. В приложении с фильмами, при открытии фильма был чёрный экран. Обновление андроид последнее, приложение обновлений не требовали. Помогала только перезагрузка. Сейчас вроде наладилось.</div>
+                                        </div>
+                                        <div class="testimonial__footer full__down row">
+                                            <a class="testimonial__link txt txt_h5 txt_prim txt_link mr_12" href="##"> Читать полностью</a>
+                                            <time class="testimonial__time txt txt_h6 txt_dark txt_bold ml_auto" datetime="2021-09-25 19:00">25.09.21</time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials__item">
+                                <div class="testimonial full">
+                                    <div class="testimonial__thumb">
+                                        <picture class="ratio__box testimonial__pic">
+                                            <source type="image/webp" srcset="./img/testimonials/testimonials_1.webp">
+                                            <source type="image/jpg" srcset="./img/testimonials/testimonials_1.jpg">
+                                            <img class="ratio__box testimonial__pic-img" src="./img/testimonials/testimonials_1.jpg" alt="testimonials 1" loading="lazy">
+                                        </picture>
+                                    </div>
+                                    <div class="testimonial__body full__up full p_32">
+                                        <div class="testimonial__info full__up mb_20">
+                                            <div class="testimonial__title txt txt_h4 txt_dark txt_up txt_black mb_20">Иван Иванов</div>
+                                            <div class="testimonial__txt txt txt_h6 txt_info">Первое время периодами не включалось видео на Ютубе, был чёрный экран и выдавало какую-то ошибку. В приложении с фильмами, при открытии фильма был чёрный экран. Обновление андроид последнее, приложение обновлений не требовали. Помогала только перезагрузка. Сейчас вроде наладилось.</div>
+                                        </div>
+                                        <div class="testimonial__footer full__down row">
+                                            <a class="testimonial__link txt txt_h5 txt_prim txt_link mr_12" href="##"> Читать полностью</a>
+                                            <time class="testimonial__time txt txt_h6 txt_dark txt_bold ml_auto" datetime="2021-09-25 19:00">25.09.21</time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials__item">
+                                <div class="testimonial full">
+                                    <div class="testimonial__thumb">
+                                        <picture class="ratio__box testimonial__pic">
+                                            <source type="image/webp" srcset="./img/testimonials/testimonials_2.webp">
+                                            <source type="image/jpg" srcset="./img/testimonials/testimonials_2.jpg">
+                                            <img class="ratio__box testimonial__pic-img" src="./img/testimonials/testimonials_2.jpg" alt="testimonials 2" loading="lazy">
+                                        </picture>
+                                    </div>
+                                    <div class="testimonial__body full__up full p_32">
+                                        <div class="testimonial__info full__up mb_20">
+                                            <div class="testimonial__title txt txt_h4 txt_dark txt_up txt_black mb_20">Иван Иванов</div>
+                                            <div class="testimonial__txt txt txt_h6 txt_info">Первое время периодами не включалось видео на Ютубе, был чёрный экран и выдавало какую-то ошибку. В приложении с фильмами, при открытии фильма был чёрный экран. Обновление андроид последнее, приложение обновлений не требовали. Помогала только перезагрузка. Сейчас вроде наладилось.</div>
+                                        </div>
+                                        <div class="testimonial__footer full__down row">
+                                            <a class="testimonial__link txt txt_h5 txt_prim txt_link mr_12" href="##"> Читать полностью</a>
+                                            <time class="testimonial__time txt txt_h6 txt_dark txt_bold ml_auto" datetime="2021-09-25 19:00">25.09.21</time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials__item">
+                                <div class="testimonial full">
+                                    <div class="testimonial__thumb">
+                                        <picture class="ratio__box testimonial__pic">
+                                            <source type="image/webp" srcset="./img/testimonials/testimonials_3.webp">
+                                            <source type="image/jpg" srcset="./img/testimonials/testimonials_3.jpg">
+                                            <img class="ratio__box testimonial__pic-img" src="./img/testimonials/testimonials_3.jpg" alt="testimonials 3" loading="lazy">
+                                        </picture>
+                                    </div>
+                                    <div class="testimonial__body full__up full p_32">
+                                        <div class="testimonial__info full__up mb_20">
+                                            <div class="testimonial__title txt txt_h4 txt_dark txt_up txt_black mb_20">Иван Иванов</div>
+                                            <div class="testimonial__txt txt txt_h6 txt_info">Первое время периодами не включалось видео на Ютубе, был чёрный экран и выдавало какую-то ошибку. В приложении с фильмами, при открытии фильма был чёрный экран. Обновление андроид последнее, приложение обновлений не требовали. Помогала только перезагрузка. Сейчас вроде наладилось.</div>
+                                        </div>
+                                        <div class="testimonial__footer full__down row">
+                                            <a class="testimonial__link txt txt_h5 txt_prim txt_link mr_12" href="##"> Читать полностью</a>
+                                            <time class="testimonial__time txt txt_h6 txt_dark txt_bold ml_auto" datetime="2021-09-25 19:00">25.09.21</time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination-->
+                    <div class="testimonials__pagination mt_32"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nomore-->
+        <section class="section section_nomore box pt_72 pb_80">
+            <picture class="section__bg">
+                <source type="image/webp" srcset="./img/nomore/nomore_sm.webp" media="(max-width: 574.98px)">
+                <source type="image/jpg" srcset="./img/nomore/nomore_sm.jpg" media="(max-width: 574.98px)">
+                <source type="image/webp" srcset="./img/nomore/nomore_md.webp" media="(max-width: 991.98px)">
+                <source type="image/jpg" srcset="./img/nomore/nomore_md.jpg" media="(max-width: 991.98px)">
+                <source type="image/webp" srcset="./img/nomore/nomore.webp">
+                <source type="image/jpg" srcset="./img/nomore/nomore.jpg">
+                <img class="section__bg-img" src="./img/nomore/nomore.jpg" alt="nomore" loading="lazy">
+            </picture>
+            <div class="section__content" data-aos="fade-right">
+                <div class="section__header mb_28">
+                    <h2 class="txt txt_h1 txt_dark txt_up">
+                        <b class="txt txt_black">Больше</b>
+                        <br> никаких пакетов!
+                    </h2>
+                </div>
+                <div class="section__body">
+                    <a class="price price_grad btn btn_grad btn_scale ripple ripple_light p_24 mb_24" href="##">
+                        <div class="txt txt_light txt_h1 txt_up txt_black">За <b> 9,90 €</b>
+                        </div>
+                    </a>
+                    <p class="txt txt_h3 txt_bold txt_dark mb_16">Вы получаете всё и сразу!</p>
+                    <p class="txt txt_h4 txt_thin txt_dark">Смотрите что угодно и сколько угодна с единым тарифом от Nika TV</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to actioon-->
+        <section class="section section_cta">
+            <div class="section__content row">
+                <div class="cl cl_sm_12">
+                    <picture class="cta__pic">
+                        <source type="image/webp" srcset="./img/cta/cta.webp">
+                        <source type="image/jpg" srcset="./img/cta/cta.jpg">
+                        <img class="cta__pic-img" src="./img/cta/cta.jpg" alt="cta" loading="lazy">
+                    </picture>
+                </div>
+                <div class="section__box_left cl back back_grad pt_72 pb_80 pl_28">
+                    <img class="section__nika section__nika_bottom d_sm_none" src="./img/cmn/NIKATV_h.svg" alt="NIKATV h" loading="lazy">
+                    <h2 class="txt txt_h1 txt_light txt_up" data-aos="fade-left">
+                        <b class="txt txt_black mb_20">Получите
+                            <br> максимум от
+                            <br>
+                        </b>телевидения
+                    </h2>
+                    <p class="txt txt_h3 txt_light txt_thin mb_32" data-aos="fade-left">Подключитесь к Nika TV сейчас и получите 3 месяца просмотра <span class="txt_up">БЕСПЛАТНО</span>
+                    </p>
+                    <a class="btn btn_md btn_prim btn_shad btn_round ripple ripple_light" href="##"> Узнать больше</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spec-->
+        <section class="section section_spec box pt_72 pb_80">
+            <picture class="section__decor">
+                <source type="image/webp" srcset="./img/spec/spec_decor.webp">
+                <source type="image/png" srcset="./img/spec/spec_decor.png">
+                <img class="section__decor-img" src="./img/spec/spec_decor.png" alt="spec decor" loading="lazy">
+            </picture>
+            <div class="section__content">
+                <div class="section__header mb_40">
+                    <h2 class="txt txt_h1 txt_dark txt_up txt_center mb_28">
+                        <b class="txt txt_black">технические</b>
+                        <br> характеристики
+                    </h2>
+                    <p class="txt txt_h3 txt_dark txt_thin txt_center">Подключитесь к Nika TV сейчас и получите 3 месяца просмотра <span class="txt_up">БЕСПЛАТНО</span>
+                    </p>
+                </div>
+                <div class="section__body row jc_between mnl_sm_20">
+                    <div class="cl_2 cl_sm_6 order_sm_2 pl_sm_20" data-aos="fade-right">
+                        <div class="txt txt_4 txt_black txt_dark mb_12">ОС:</div>
+                        <div class="txt txt_3 txt_thin txt_dark mb_24">LINUX</div>
+                        <div class="hr hr_dark mb_24"></div>
+                        <div class="txt txt_4 txt_black txt_dark mb_12">Количество ядер:</div>
+                        <div class="txt txt_3 txt_thin txt_dark mb_24">Четыре</div>
+                        <div class="hr hr_dark mb_24"></div>
+                        <div class="txt txt_4 txt_black txt_dark mb_12">Размеры:</div>
+                        <div class="txt txt_3 txt_thin txt_dark mb_24">120х120х20</div>
+                        <div class="hr hr_dark mb_24"></div>
+                        <div class="txt txt_4 txt_black txt_dark mb_12">Электропотребление</div>
+                        <div class="txt txt_3 txt_thin txt_dark mb_24">Резервное</div>
+                    </div>
+                    <div class="cl_6 cl_sm_12 order_sm_1 pl_sm_20" data-aos="zoom-in">
+                        <picture class="spec__pic">
+                            <source type="image/webp" srcset="./img/spec/spec.webp">
+                            <source type="image/png" srcset="./img/spec/spec.png">
+                            <img class="spec__pic-img" src="./img/spec/spec.png" alt="spec" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="cl_2 cl_sm_6 order_sm_2 txt txt_right pl_sm_20" data-aos="fade-left">
+                        <div class="txt txt_4 txt_black txt_dark mb_12">ОС:</div>
+                        <div class="txt txt_3 txt_thin txt_dark mb_24">LINUX</div>
+                        <div class="hr hr_dark mb_24"></div>
+                        <div class="txt txt_4 txt_black txt_dark mb_12">Количество ядер:</div>
+                        <div class="txt txt_3 txt_thin txt_dark mb_24">Четыре</div>
+                        <div class="hr hr_dark mb_24"></div>
+                        <div class="txt txt_4 txt_black txt_dark mb_12">Размеры:</div>
+                        <div class="txt txt_3 txt_thin txt_dark mb_24">120х120х20</div>
+                        <div class="hr hr_dark mb_24"></div>
+                        <div class="txt txt_4 txt_black txt_dark mb_12">Электропотребление</div>
+                        <div class="txt txt_3 txt_thin txt_dark mb_24">Резервное</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Delivery-->
+        <section class="section section_delivery box pt_72 pb_80">
+            <picture class="section__bg">
+                <source type="image/webp" srcset="./img/delivery/delivery_bg_sm.webp" media="(max-width: 574.98px)">
+                <source type="image/png" srcset="./img/delivery/delivery_bg_sm.png" media="(max-width: 574.98px)">
+                <source type="image/webp" srcset="./img/delivery/delivery_bg_md.webp" media="(max-width: 991.98px)">
+                <source type="image/png" srcset="./img/delivery/delivery_bg_md.png" media="(max-width: 991.98px)">
+                <source type="image/webp" srcset="./img/delivery/delivery_bg.webp">
+                <source type="image/png" srcset="./img/delivery/delivery_bg.png">
+                <img class="section__bg-img" src="./img/delivery/delivery_bg.png" alt="delivery bg" loading="lazy">
+            </picture>
+            <div class="section__content" data-aos="fade-right">
+                <div class="section__header mb_28">
+                    <h2 class="txt txt_h1 txt_light txt_up">
+                        <b class="txt txt_black">Доставка</b>
+                        <br> и оплата
+                    </h2>
+                </div>
+                <div class="section__body cl_5 cl_lg_6 cl_md_8 cl_sm_12">
+                    <div class="badge mb_36">
+                        <div class="badge__counter txt txt_h1 txt_black txt_light mr_20">1</div>
+                        <div class="badge__info">
+                            <div class="badge__title txt txt_h4 txt_black txt_dark">100% рабочие приставки</div>
+                            <div class="badge__txt txt txt_h4 txt_thin txt_dark">(проверяем перед отправкой)</div>
+                        </div>
+                    </div>
+                    <div class="badge mb_36">
+                        <div class="badge__counter txt txt_h1 txt_black txt_light mr_20">1</div>
+                        <div class="badge__info">
+                            <div class="badge__title txt txt_h4 txt_black txt_dark">Доставка 1-3 дня</div>
+                            <div class="badge__txt txt txt_h4 txt_thin txt_dark">по Германии</div>
+                        </div>
+                    </div>
+                    <div class="badge">
+                        <div class="badge__counter txt txt_h1 txt_black txt_light mr_20">1</div>
+                        <div class="badge__info">
+                            <div class="badge__title txt txt_h4 txt_black txt_dark">Протестируйте 14 дней без</div>
+                            <div class="badge__txt txt txt_h4 txt_thin txt_dark">риска с возможностью возврата</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sale-->
+        <section class="section section_sale box pt_72 pb_80 pr_lg_0 pr_md_0 pr_sm_16">
+            <picture class="hero__bg">
+                <source type="image/webp" srcset="./img/hero/hero_bg_sm.webp" media="(max-width: 574.98px)">
+                <source type="image/png" srcset="./img/hero/hero_bg_sm.png" media="(max-width: 574.98px)">
+                <source type="image/webp" srcset="./img/hero/hero_bg_md.webp" media="(max-width: 991.98px)">
+                <source type="image/png" srcset="./img/hero/hero_bg_md.png" media="(max-width: 991.98px)">
+                <source type="image/webp" srcset="./img/hero/hero_bg.webp">
+                <source type="image/png" srcset="./img/hero/hero_bg.png">
+                <img class="hero__bg-img" src="./img/hero/hero_bg.png" alt="hero bg" loading="lazy">
+            </picture>
+            <img class="section__nika section__nika_bottom d_sm_none" src="./img/cmn/NIKATV_h.svg" alt="NIKATV h" loading="lazy">
+            <div class="section__content row">
+                <div class="cl_5 cl_lg_6 cl_sm_12 pr_40 pr_lg_0" data-aos="fade-right">
+                    <h1 class="txt txt_h1 txt_light txt_up mb_24">
+                        <b class="txt txt_black">Получите</b>
+                        <br> скидку!
+                    </h1>
+                    <div class="hr hr_light mb_24"></div>
+                    <div class="price row mb_20 mb_sm_60">
+                        <div class="price__new txt txt_light mr_36">
+                            <b>9,90 €</b>
+                            <br> Цена в месяц
+                        </div>
+                        <div class="price__old txt txt_light">
+                            <b>19,90 €</b>
+                            <br> Старая цена
+                        </div>
+                    </div>
+                    <div class="gift mb_28 mnb_sm_160 cl_12 cl_sm_6 d_sm_block ml_sm_auto">
+                        <picture class="gift__pic">
+                            <source type="image/webp" srcset="./img/cmn/gift.webp">
+                            <source type="image/png" srcset="./img/cmn/gift.png">
+                            <img class="gift__pic-img" src="./img/cmn/gift.png" alt="gift" loading="lazy">
+                        </picture>
+                        <div class="gift__info cl">
+                            <div class="txt txt_h3 txt_light txt_black mr_40">3 месяца</div>
+                            <div class="txt txt_h3 txt_light txt_thin">просмотра в подарок</div>
+                        </div>
+                    </div>
+                    <a class="hero__btn btn btn_md btn_prim btn_shad btn_round ripple ripple_light d_sm_none" href="##">Купить со скидкой</a>
+                </div>
+                <div class="cl cl_sm_12" data-aos="zoom-in">
+                    <picture class="cl_12">
+                        <source type="image/webp" srcset="./img/sale/sale_md.webp" media="(max-width: 991.98px)">
+                        <source type="image/png" srcset="./img/sale/sale_md.png" media="(max-width: 991.98px)">
+                        <source type="image/webp" srcset="./img/sale/sale_lg.webp" media="(max-width: 1199.98px)">
+                        <source type="image/png" srcset="./img/sale/sale_lg.png" media="(max-width: 1199.98px)">
+                        <source type="image/webp" srcset="./img/sale/sale.webp">
+                        <source type="image/png" srcset="./img/sale/sale.png">
+                        <img class="cl_12-img" src="./img/sale/sale.png" alt="sale" loading="lazy">
+                    </picture>
+                    <a class="hero__btn btn btn_md btn_prim btn_shad btn_round ripple ripple_light d_none d_sm_flex" href="##">Узнать больше</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER-->
+    <footer class="footer full__down box row">
+
+        <!-- Footer logo-->
+        <a class="logo footer__logo" href="##">
+            <img class="logo__img" src="img/cmn/logo.png" alt="logo">
+        </a>
+        <div class="menu menu_dark footer__nav">
+            <nav class="menu__list">
+                <div class="menu__stripe"></div>
+                <div class="menu__item menu__item_active">
+                    <a class="menu__link menu__link_active" href="#">Главная</a>
+                </div>
+                <div class="menu__item">
+                    <a class="menu__link" href="#">Возможности</a>
+                </div>
+                <div class="menu__item">
+                    <a class="menu__link" href="#">Отзывы</a>
+                </div>
+                <div class="menu__item">
+                    <a class="menu__link" href="#">Доставка</a>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <div class="rights back back_dark pt_16 pb_16 box fl_center">
+        <a class="txt txt_h5 txt_thin txt_light txt_link" href="##"> © 2021 “NikaTV” Все права защищенны</a>
+    </div>
+
+    <!-- POPUPS-->
+    <div class="popup popup_consult">
+        <div class="popup__content">
+            <div class="popup__body">
+                <div class="popup__cross popup__close">
+                    <svg>
+                        <use href="./icons/icons.svg#cmn--close"></use>
+                    </svg>
+                </div>
+                <h2 class="txt txt_h2 txt_light txt_up mb_20 txt_center">
+                    <b class="txt txt_black">Готовы</b>
+                    <br> сделать заказ ?
+                </h2>
+                <form class="form form_consult">
+                    <div class="form__item mb_20 mb_lg_16">
+                        <input class="form__input cl_12" type="text" placeholder="Name" name="name_1" aria-label="name" data-validate-field="name" required="">
+                        <div class="form__border"></div>
+                    </div>
+                    <div class="form__item mb_20 mb_lg_16">
+                        <input class="form__input cl_12" type="email" placeholder="Email" name="email_1" aria-label="email" data-validate-field="letter" required="">
+                        <div class="form__border"></div>
+                    </div>
+                    <div class="form__item mb_20 mb_lg_16">
+                        <input class="form__input cl_12" type="tel" placeholder="Phone" name="tel_1" data-validate-field="tel" minlength="5" aria-label="phone" required="">
+                        <div class="form__border"></div>
+                    </div>
+                    <button class="btn btn_md btn_prim btn_round btn_shad ripple ripple_light cl_12">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup_reply">
+        <div class="popup__content">
+            <div class="popup__body">
+                <div class="popup__cross popup__close">
+                    <svg>
+                        <use href="./icons/icons.svg#cmn--close"></use>
+                    </svg>
+                </div>
+                <svg class="popup__icon mx_auto mb_32">
+                    <use href="./icons/icons.svg#check_mark"></use>
+                </svg>
+                <h2 class="txt txt_h2 txt_black txt_up txt_light mb_20 txt_center">Спасибо</h2>
+                <p class="txt txt_h6 txt_thin txt_light mb_32">Наш оператор свяжется с вами в ближайшее время</p>
+                <button class="btn btn_md btn_prim btn_round btn_shad ripple ripple_light popup__close cl_12">Главная</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- GOTOP-->
+    <button class="gotop" type="button" aria-label="go top">Вверх</button>
+<noscript><link rel="stylesheet" href="./css/style.min.css"></noscript>
+</body>
+</html>
